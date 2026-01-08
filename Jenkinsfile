@@ -5,7 +5,8 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git'
+                // Only put the GitHub URL here
+                git 'https://github.com/shifa-cloud/LBC.git'
             }
         }
 
@@ -24,4 +25,4 @@ pipeline {
             }
         }
     }
-}https://github.com/shifa-cloud/LBC.git
+}
