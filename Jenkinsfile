@@ -3,13 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                // Only put the GitHub URL here
-                git 'https://github.com/shifa-cloud/LBC.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t static-web:latest .'
